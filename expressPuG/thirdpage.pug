@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        title third page
+    body
+        h1#pageTitle Title goes here
+        p.big-para.
+            here is my some text for my big paragraph
+        p.big-para here is my some text for 
+            my big paragraph
+
+    ul
+        each val in [1,2,3,5]
+            li=val
+    ul
+        each val,index in [1,4,5,6,3,5]
+            li=index+1 +' : '+ val 
+
+//- declaring a variable and using while loop
+
+-var n=0
+ul
+    while n<4
+     li=n++
+
+//-if condition
+-var p=3
+ul 
+    if p<4
+        li hi
+    else
+        li no
+
+
+//- switch condition
+
+-var n=10
